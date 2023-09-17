@@ -11,17 +11,21 @@ import kotlin.random.Random
 
 class IdolManageFun {
     fun getIdol() {
-        for (idol in idolDB) {
-            println("소속사: ${idol.value.company}")
-            println("그룹명: ${idol.value.name}")
-            println("멤버수: ${idol.value.count}")
-            print("아이돌 리스트: ")
-            idol.value.members?.forEach {
-                print("${it} ")
+        if (idolDB.size == 0) {
+            println("등록된 아이돌이 없습니다.")
+        } else {
+            for (idol in idolDB) {
+                println("소속사: ${idol.value.company}")
+                println("그룹명: ${idol.value.name}")
+                println("멤버수: ${idol.value.count}")
+                print("아이돌 리스트: ")
+                idol.value.members?.forEach {
+                    print("${it} ")
+                }
+                //TODO 행사리스트
+                println()
+                println("-----------------------------------")
             }
-            //TODO 행사리스트
-            println()
-            println("-----------------------------------")
         }
     }
 
@@ -33,9 +37,17 @@ class IdolManageFun {
             val id = 122 //TODO id 값 자동으로 생성해주는 함수 만들기
             val members = str.subList(3, str.size)
             val data = IdolGroup(str[0], str[1], str[2].toInt(), members)
-            idolDB.put(id, data)
-            println("AddIdol 결과: $idolDB")
-            updateIdolFileDB()
+            val dupIdol = idolDB.filter {
+                it.value.name == data.name
+            }
+            if (dupIdol.isEmpty()) {
+                idolDB.put(id, data)
+                println("등록이 완료되었습니다.")
+//            println("AddIdol 결과: $idolDB")
+                updateIdolFileDB()
+            } else {
+                println("이미 존재하는 아이돌입니다.")
+            }
         }
     }
 
@@ -92,7 +104,8 @@ class IdolManageFun {
                 val members = str.subList(3, str.size)
                 val data = IdolGroup(str[0], str[1], str[2].toInt(), members)
                 idolDB.put(idolKey, data)
-                println("AddIdol 결과: $idolDB")
+                println("수정이 완료되었습니다.")
+//                println("AddIdol 결과: $idolDB")
             }
         }
         updateIdolFileDB()
@@ -110,7 +123,7 @@ class IdolManageFun {
                     break
                 }
             }
-            if(flag){
+            if (flag) {
                 println("삭제 완료!")
             } else {
                 println("존재하지 않는 회사입니다.")

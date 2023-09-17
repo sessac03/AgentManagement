@@ -42,11 +42,12 @@ fun startManage() {
                         println("프로그램이 종료되었습니다.")
                         break
                     }
+
                     else -> {
                         println("유효하지 않은 메뉴입니다.")
                     }
                 }
-            }catch (nfe: NumberFormatException){
+            } catch (nfe: NumberFormatException) {
                 println("숫자로 입력해주세요.")
             }
         }
