@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3923f72-eb06-4a69-b60b-d97344f3fef6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/managementfile/CompanyFile.dat" beforeDir="false" afterPath="$PROJECT_DIR$/managementfile/CompanyFile.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/managementfile/EventFile.dat" beforeDir="false" afterPath="$PROJECT_DIR$/managementfile/EventFile.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/managementfile/IdolFile.dat" beforeDir="false" afterPath="$PROJECT_DIR$/managementfile/IdolFile.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/agent/manage/main/AgentManage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/agent/manage/main/AgentManage.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/agent/manage/management/company/CompanyManageFun.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/agent/manage/management/company/CompanyManageFun.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/agent/manage/management/event/EventManageFun.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/agent/manage/management/event/EventManageFun.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/agent/manage/management/idol/IdolManageFun.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/agent/manage/management/idol/IdolManageFun.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -47,11 +47,11 @@ class CompanyManageFun {
                 }
             }
             if (flag){
+                println("이미 존재하는 회사명입니다.")
+            }else{
                 companyDB.add(companyHash)
 //            println("AddCompany 결과: $companyDB")
                 updateCompanyFileDB()
-            }else{
-                println("이미 존재하는 회사명입니다.")
             }
         }
     }
