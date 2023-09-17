@@ -1,6 +1,5 @@
 package com.agent.manage.database
 
-import com.agent.manage.data.CompanyInfo
 import java.io.*
 
 class CompanyDB {
